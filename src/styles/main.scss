@@ -1,11 +1,12 @@
-$primaryColor: #F5EFE6;
-$secondaryColor: #E8DFCA;
-
-$fontColor: #2C3333;
+$primaryColor: #F7F7F7;
+$secondaryColor: #EEEEEE;
+$fontColor: #393E46;
+$titleColor: #191b1e;
 
 *{
     padding : 0;
     margin : 0;
+    box-sizing : border-box;
 }
 
 body{
@@ -18,11 +19,9 @@ body{
 nav{
     display: grid;
     background-color: $secondaryColor;
-    padding: 5px;
-
+    padding: 15px;
     grid-template-columns: 2fr 1fr;
     h1{
-        padding: 10px;
         color: $fontColor;
     }
 
@@ -46,3 +45,36 @@ nav{
 }
 
 // Responsive Navbar
+
+// Hero
+
+.hero{
+    display: flex;
+    background-image: url("/src/public/images/heros/hero-image_1.jpg");
+    height: 60vh;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    .hero-Inner{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        color: $titleColor;
+
+        .hero-title{
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .hero-text{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}
