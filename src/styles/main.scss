@@ -1,0 +1,48 @@
+$primaryColor: #F5EFE6;
+$secondaryColor: #E8DFCA;
+
+$fontColor: #2C3333;
+
+*{
+    padding : 0;
+    margin : 0;
+}
+
+body{
+    background-color: $primaryColor;
+    width: 100%;
+    height: 100%;
+}
+
+// Navbar 
+nav{
+    display: grid;
+    background-color: $secondaryColor;
+    padding: 5px;
+
+    grid-template-columns: 2fr 1fr;
+    h1{
+        padding: 10px;
+        color: $fontColor;
+    }
+
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+
+        li{
+            
+            align-self: center;
+            a{
+                color: $fontColor;
+                font-weight: bold;
+                text-decoration: none;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+// Responsive Navbar
