@@ -1,5 +1,5 @@
 $primaryColor: #F7F7F7;
-$secondaryColor: #EEEEEE;
+$secondaryColor: #e2dada;
 $fontColor: #393E46;
 $titleColor: #191b1e;
 
@@ -13,6 +13,7 @@ body{
     background-color: $primaryColor;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 // Navbar 
@@ -44,7 +45,53 @@ nav{
     }
 }
 
-// Responsive Navbar
+// drawer navbar
+.humberger-button{
+    display: none;
+}
+
+#drawer{
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 94%;
+    background-color: $secondaryColor;
+    position: absolute;
+    float: right;
+    transform: translate(150px, 56px);
+    transition: transform 0.3s ease-in-out;
+
+    ul{
+        padding: 25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+
+        .item-1{
+            align-self: end;
+        }
+        
+        .item-3{
+            align-self: start;
+        }
+    }
+}
+
+
+#drawer.open{
+    transform: translate(0, 56px);
+}
+
+.humberger-button{
+    align-self: center;
+    text-align: right;
+    padding-right: 15px;
+    a{
+        font-size: 25px;
+        color: $fontColor;        
+    }
+}
 
 // Hero
 

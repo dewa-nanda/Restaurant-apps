@@ -1,0 +1,17 @@
+@media screen and (max-width: 700px) {
+    .nav-link{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .humberger-button{
+        display: grid;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+      max-width: 1200px;
+    }
+  }
