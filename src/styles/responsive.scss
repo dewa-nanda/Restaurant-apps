@@ -1,8 +1,84 @@
-@media screen and (max-width: 700px) {
-    .nav-link{
-        display: none;
-    }
-    .humberger-button{
-        display: grid;
-    }
+$primaryColor: #f7f7f7;
+$secondaryColor: #e2dada;
+$secondaryColor2: #eeeeee;
+$fontColor: #393e46;
+$titleColor: #191b1e;
+
+.card {
+  display: grid;
+  grid-row-gap: 16px;
 }
+
+@media screen and (max-width: 455px){
+  nav{
+    ul{
+      position: absolute;
+      right: 0;
+      height: 100vh;
+      width: 50%;
+      background-color: $secondaryColor;
+      z-index: 2;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .nav__toggle{
+      z-index: 3;
+      display: block;
+      cursor: pointer;;
+    }
+  }
+}
+
+.slide{
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 455px) {
+  .card-item__content {
+    padding: 16px 16px;
+  }
+
+  .card-item__title {
+    font-size: 28px;
+  }
+
+  .headline__description {
+    font-size: 16px;
+  }
+
+  .header-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  nav{
+    ul{
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+}
+
+

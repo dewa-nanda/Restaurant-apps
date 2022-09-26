@@ -1,14 +1,12 @@
-// Hamburger icon
-const hamburgerButtonElement = document.querySelector('#hamburger');
-const drawerElement = document.querySelector('#drawer');
+import './view/navbar-element';
+import './view/header-restaurant';
+import './view/hero-element';
+import data from '../DATA.json';
+
+const navbar_toggleElement = document.querySelector('.nav__toggle');
 const mainElement = document.querySelector('main');
+const nav = document.querySelector('nav ul');
 
-hamburgerButtonElement.addEventListener('click', event => {
-    drawerElement.classList.toggle('open');
-    event.stopPropagation();
+navbar_toggleElement.addEventListener('click', () => {
+  nav.classList.toggle('slide');
 })
-
-mainElement.addEventListener('click', event => {
-    drawerElement.classList.remove('open');
-    event.stopPropagation();
-});
