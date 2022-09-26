@@ -26,6 +26,7 @@ nav {
   height: 50px;
 
   .nav__logo {
+    z-index: 2;
     align-self: center;
     color: $fontColor;
   }
@@ -40,6 +41,8 @@ nav {
       align-self: center;
 
       a{
+        height: 100%;
+        font-size: 20px;
         color: $fontColor;
         text-decoration: none;
       }
@@ -52,6 +55,7 @@ nav {
     color: $fontColor;
     display: none;
     align-self: center;
+    cursor: pointer;
   }
 
   
@@ -73,18 +77,17 @@ nav {
 
   .hero-Inner {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: fit-content;
     color: $titleColor;
     text-align: center;
+  
     .hero-title {
-      font-size: 20px;
       font-weight: 500;
       margin-bottom: 8px;
     }
 
     .hero-text {
       margin-top: 16px;
-      font-size: 0px;
       font-weight: 300;
     }
   }
@@ -96,45 +99,38 @@ main {
   width: 100%;
 
   .container {
-    padding: 32px;
+    padding: 24px;
     margin: 32px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    background-color: $secondaryColor2;
 
     .header-container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      .search-container {
-        display: flex;
-        input {
-          align-self: center;
-          padding: 6px;
-          height: 100%;
-          font-size: 17px;
-          border: none;
-          background-color: $secondaryColor2;
-          border-top-left-radius: 10px;
-          border-bottom-left-radius: 10px;
-        }
-        button {
-          float: right;
-          padding: 6px;
-          background: #ddd;
-          font-size: 17px;
-          border: none;
-          cursor: pointer;
-          border-top-right-radius: 10px;
-          border-bottom-right-radius: 10px;
-        }
-      }
+      text-align: center;
+      grid-template-rows: 1fr;
+      color: $fontColor;
     }
   }
 }
 
+// Skip content
+.skip-link{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: $fontColor;
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 // Main coantent
 .content {
-  padding: 32px;
 
   .card {
     margin: 32px auto auto;
@@ -142,32 +138,63 @@ main {
     grid-row-gap: 26px;
 
     .card-item {
+      color: $fontColor;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       width: 100%;
       border-radius: 5px;
+      background-color: $secondaryColor;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
 
       .card-item__thumbnail {
         width: 100%;
       }
+
+        .card-cityName{
+          background: rgba(197, 185, 185, 0.573);
+          backdrop-filter: blur( 10px );
+          -webkit-backdrop-filter: blur( 14px );
+          border-radius: 10px;
+          border: 1px solid rgba(22, 21, 21, 0.18);
+          margin: 5px;
+          padding: 5px;
+          display: block;
+          position: absolute;
+
+          font-weight: 550;
+      }
+      
+
       .card-item__content {
-        padding: 16px;
+        padding: 20px;
 
         .card-item__rate {
           border-bottom: 1px solid black;
-          font-size: 18px;
         }
 
         .card-item__title {
-          margin-top: 25px;
+          margin-top: 15px;
         }
+
         .card-item__description {
           margin-top: 16px;
-          font-size: 15px;
           line-height: 1.5em;
           text-align: justify;
         }
       }
     }
+  }
+}
+
+.footer{
+  height: 50px;
+  background-color: $secondaryColor;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+  p{
+    flex-basis: 100%;
+    align-self: center;
+    text-align: center;
   }
 }

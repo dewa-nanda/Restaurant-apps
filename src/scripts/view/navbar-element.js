@@ -5,19 +5,21 @@ class navbarElement extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <nav>
-      <div class="nav__logo">
-        <h1>KETresto</h1>
-      </div>        
+    <header>
+      <nav>
+        <div class="nav__logo">
+          <h1>KETresto</h1>
+        </div>        
     
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Favorite</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
+        <a class="nav__toggle" aria-label="Tombol Menampilkan Navigasi" role="button" tabindex="0">☰</a>
 
-      <a class="nav__toggle" href="#"><i class="fa-solid fa-bars"></i></a>
-    </nav>`;
+        <ul>
+          <li><a href="http://localhost:9000/">Home</a></li>
+          <li><a href="#">Favorite</a></li>
+          <li><a href="https://github.com/dewa-nanda" target="_blank">About Us</a></li>
+        </ul>
+      </nav>
+    </header>`;
   }
 }
 
