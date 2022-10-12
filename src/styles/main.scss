@@ -101,9 +101,6 @@ main {
   .container {
     padding: 24px;
     margin: 32px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    background-color: $secondaryColor2;
 
     .header-container {
       display: grid;
@@ -142,7 +139,7 @@ main {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       width: 100%;
       border-radius: 5px;
-      background-color: $secondaryColor;
+      background-color: $secondaryColor2;
       overflow: hidden;
       display: flex;
       flex-direction: column;
