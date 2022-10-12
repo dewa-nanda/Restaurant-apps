@@ -13,9 +13,9 @@ $titleColor: #191b1e;
   nav{
     ul{
       position: absolute;
-      height: 100vh;
+      height: 35%;
       left: 0;
-      width: 50%;
+      width: 100%;
       background-color: $secondaryColor;
       z-index: 1;
       flex-direction: column;
@@ -23,6 +23,7 @@ $titleColor: #191b1e;
       transition: transform 0.3s ease-in-out;
     }
     .nav__toggle{
+      z-index: 2;
       display: block;
       cursor: pointer;;
     }
@@ -154,7 +155,7 @@ $titleColor: #191b1e;
 @media screen and (min-width: 900px) {
   .card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .hero-title{
@@ -185,6 +186,6 @@ $titleColor: #191b1e;
 }
 @media screen and (min-width: 1200px) {
   main {
-    max-width: 1200px;
+    max-width: 1800px;
   }
 }

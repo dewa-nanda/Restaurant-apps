@@ -20,10 +20,10 @@ body {
 // Navbar
 nav {
   display: flex;
-  background-color: $secondaryColor;
   justify-content:space-between;
   padding-left: 20px;
   height: 50px;
+  border-bottom: 1px solid $secondaryColor;
 
   .nav__logo {
     z-index: 2;
@@ -80,6 +80,8 @@ nav {
     max-width: fit-content;
     color: $titleColor;
     text-align: center;
+    border-radius: 10px;
+    background-color: rgba(238, 231, 231, 0.438);
   
     .hero-title {
       font-weight: 500;
@@ -186,7 +188,6 @@ main {
 
 .footer{
   height: 50px;
-  background-color: $secondaryColor;
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
   p{
