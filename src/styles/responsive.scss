@@ -9,9 +9,9 @@ $titleColor: #191b1e;
   grid-row-gap: 16px;
 }
 
-@media screen and (max-width: 455px){
-  nav{
-    ul{
+@media screen and (max-width: 455px) {
+  nav {
+    ul {
       position: absolute;
       height: 35%;
       left: 0;
@@ -22,18 +22,18 @@ $titleColor: #191b1e;
       transform: translateX(-100%);
       transition: transform 0.3s ease-in-out;
     }
-    .nav__toggle{
+    .nav__toggle {
       z-index: 2;
       display: block;
-      cursor: pointer;;
+      cursor: pointer;
     }
   }
 
-  .hero-title{
+  .hero-title {
     font-size: 16px;
   }
 
-  .hero-text{
+  .hero-text {
     font-size: 18px;
   }
 
@@ -48,10 +48,22 @@ $titleColor: #191b1e;
   .card-item__description {
     font-size: 18px;
   }
+
+  .input-commant {
+    h3 {
+      text-align: center;
+    }
+  }
 }
 
-.slide{
+.slide {
   transform: translateX(0);
+}
+
+.info__location {
+  justify-content: space-between;
+  display: grid;
+  gap: 1em;
 }
 
 @media screen and (min-width: 455px) {
@@ -67,23 +79,23 @@ $titleColor: #191b1e;
     font-size: 16px;
   }
 
-  .header-container{
+  .header-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
-  nav{
-    ul{
+  nav {
+    ul {
       width: 50%;
     }
   }
 
-  .hero-title{
+  .hero-title {
     font-size: 20px;
   }
 
-  .hero-text{
+  .hero-text {
     font-size: 24px;
   }
 
@@ -98,37 +110,54 @@ $titleColor: #191b1e;
   .card-item__description {
     font-size: 18px;
   }
+
+  .list-review {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-@media screen and (max-width: 640px){
-  .header-container{
+@media screen and (max-width: 640px) {
+  .header-container {
     flex-direction: column;
     text-align: center;
-    
-    h2{
+
+    h2 {
       padding-bottom: 20px;
     }
   }
-  
-  .search-container{
-    input{
+
+  .search-container {
+    input {
       width: 80%;
     }
   }
 }
 
-@media screen and (min-width: 640px){
-  .search-container{
-    input{
+@media screen and (min-width: 640px) {
+  .search-container {
+    input {
       width: 80%;
     }
   }
 
-  nav{
-   ul{
-    width: 50%;
-   } 
+  nav {
+    ul {
+      width: 50%;
+    }
   }
 
+  // Detail
+
+  
+  .detail__resto {
+    grid-template-columns: 1fr 1fr;
+    .side-image{
+      grid-column: 1/2;
+    }
+  }
+
+  menu-element {
+    grid-column: 1/3;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -158,16 +187,16 @@ $titleColor: #191b1e;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .hero-title{
+  .hero-title {
     font-size: 25px;
   }
 
-  .hero-text{
+  .hero-text {
     font-size: 32px;
   }
 
-  .search-container{
-    input{
+  .search-container {
+    input {
       width: 100%;
     }
   }
@@ -183,7 +212,16 @@ $titleColor: #191b1e;
   .card-item__description {
     font-size: 16px;
   }
+
+  .info__location {
+    justify-content: stretch;
+  }
+
+  .list-review {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   main {
     max-width: 1800px;
