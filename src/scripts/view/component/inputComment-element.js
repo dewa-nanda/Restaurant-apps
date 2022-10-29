@@ -26,7 +26,7 @@ class commentElement extends HTMLElement {
             <div class="input-commant">
                 <h3>Insert your comment below</h3>
                 <input type="text" id="nameElement" class="input" placeholder="masukan nama anda"></input>
-                <textarea id="commantElement" class="input" placeholder="masukan komentar anda"></textarea>
+                <textarea id="commantElement" class="input" placeholder="masukan komentar anda"  aria-label="masukan komentar anda"></textarea>
                 <button id="reviewButtonElement" type="button" aria-label="give ur comment here">Comment</button>
             </div>
         </div>

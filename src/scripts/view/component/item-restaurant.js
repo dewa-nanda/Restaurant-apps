@@ -17,7 +17,7 @@ class itemRestaurant extends HTMLElement {
 
             <div class="card-item__content">
               <p class="card-item__rate">Rating: ${this._restaurant.rating}</p>
-              <h1 class="card-item__title"><a href="/#/detail/${this._restaurant.id}">${this._restaurant.name}</a></h1>
+              <h1 class="card-item__title"><a href="/#/detail/${this._restaurant.id}" aria-label="link to go detail ${this._restaurant.name}">${this._restaurant.name}</a></h1>
               <p class="card-item__description">
                 ${this._restaurant.description}
               </p>

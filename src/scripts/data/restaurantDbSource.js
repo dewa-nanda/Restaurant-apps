@@ -1,6 +1,5 @@
+import axios from 'axios';
 import API_ENDPOINT from '../globals/api-endpoint';
-
-const axios = require('axios').default;
 
 class RestaurantDbSource {
   static async getListRestaurants() {

@@ -9,8 +9,9 @@ class navbarElement extends HTMLElement {
         <div class="nav__logo">
           <h1>KETresto</h1>
         </div>
-        <a class="nav__toggle" id="hamburgerButton" aria-label="Tombol Menampilkan Navigasi" role="button" tabindex="0">☰</a>
 
+        <button class="nav__toggle" id="hamburgerButton" aria-label="Tombol Menampilkan Navigasi" type="button">☰</button>
+        
         <ul id="navigationDrawer">
           <li><a href="#/home">Home</a></li>
           <li><a href="#/favorite">Favorite</a></li>

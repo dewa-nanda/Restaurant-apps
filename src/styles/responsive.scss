@@ -13,7 +13,8 @@ $titleColor: #191b1e;
   nav {
     ul {
       position: absolute;
-      height: 35%;
+      height: 100vh;
+      overflow: hidden;
       left: 0;
       width: 100%;
       background-color: $secondaryColor;

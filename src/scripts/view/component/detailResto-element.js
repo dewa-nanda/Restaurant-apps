@@ -15,7 +15,9 @@ class detailResto extends HTMLElement {
     this.innerHTML += createRestaurantDetailTemplate(this._data);
 
     menuElement.menu = this._data.menus;
+    menuElement.tabIndex = 0;
     const commentElement = document.createElement('inputcomment-element');
+    commentElement.tabIndex = 0;
 
     this.appendChild(menuElement);
     this.appendChild(commentElement);

@@ -11,10 +11,10 @@ const alert = (response) => {
 };
 
 const createRestaurantDetailTemplate = (restaurant) => `
-    <div class="side-image">
-      <img src="${API_ENDPOINT.IMAGE('medium', restaurant.pictureId)}"></img>
+    <div class="side-image" tabindex="0">
+      <img src="${API_ENDPOINT.IMAGE('medium', restaurant.pictureId)}" alt="${restaurant.name} from ${restaurant.city}"></img>
     </div>
-    <div class="detail__resto_info">
+    <div class="detail__resto_info" tabindex="0">
       <div class="info__header">
         <h1>${restaurant.name}</h1>
         <p><i class="fa-solid fa-star icon"></i> ${restaurant.rating}</p>
@@ -37,9 +37,9 @@ const createMenu = (type, data) => {
   divElement.innerHTML = `<h3>${type}</h3>`;
   const ulElement = document.createElement('ul');
   ulElement.className = `${type}_list`;
-  data.forEach((object, index) => {
+  data.forEach((object) => {
     const liElement = document.createElement('li');
-    liElement.innerHTML = `<span class="number">${index + 1}.</span> <span class="name">${object.name}</span>`;
+    liElement.innerHTML = `<span class="name">${object.name}</span>`;
     ulElement.appendChild(liElement);
   });
 
