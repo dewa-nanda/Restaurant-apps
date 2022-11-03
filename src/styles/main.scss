@@ -375,6 +375,7 @@ main {
       .item_element {
         padding-bottom: 8px;
         display: flex;
+        flex-direction: column;
         .header-comment {
           padding: 4px;
           display: flex;
