@@ -1,3 +1,6 @@
+/* eslint-disable no-underscore-dangle */
+import API_ENDPOINT from '../../globals/api-endpoint';
+
 class itemRestaurant extends HTMLElement {
   set restaurant(restaurant) {
     this._restaurant = restaurant;
@@ -9,12 +12,12 @@ class itemRestaurant extends HTMLElement {
         <article class="card-item" tabindex="0">
             <figure>
               <span class="card-cityName">${this._restaurant.city}</span>
-              <img class="card-item__thumbnail" src="${this._restaurant.pictureId}" height="283" alt="${this._restaurant.name} from ${this._restaurant.city}">
+              <img class="card-item__thumbnail" src="${API_ENDPOINT.IMAGE('small', this._restaurant.pictureId)}" height="283" alt="${this._restaurant.name} from ${this._restaurant.city}">
             </figure>
 
             <div class="card-item__content">
-              <h2 class="card-item__rate">Rating: ${this._restaurant.rating}</h2>
-              <h1 class="card-item__title">${this._restaurant.name}</h1>
+              <p class="card-item__rate">Rating: ${this._restaurant.rating}</p>
+              <h1 class="card-item__title"><a href="/#/detail/${this._restaurant.id}" aria-label="link to go detail ${this._restaurant.name}">${this._restaurant.name}</a></h1>
               <p class="card-item__description">
                 ${this._restaurant.description}
               </p>
