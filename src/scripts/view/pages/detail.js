@@ -5,7 +5,8 @@ import UrlParser from '../../routes/url-parser';
 import { alertMaker, loadingMaker, loadingDelete } from '../../utils/maker-element';
 import { createLikeButtonTemplate } from '../templates/template-creator';
 import '../component/detailResto-element';
-import LikeButtonInitiator from '../../utils/like-button-initator';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
+import FavoritRestoIdb from '../../data/favorite-resto-idb';
 
 const Detail = {
   async render() {
@@ -27,8 +28,9 @@ const Detail = {
         detailElement.data = res.restaurant;
         likeButtonContainer.innerHTML = createLikeButtonTemplate();
 
-        LikeButtonInitiator.init({
+        LikeButtonPresenter.init({
           likeButtonContainer: document.querySelector('#likeButtonContainer'),
+          favoriteResto: FavoritRestoIdb,
           resto: {
             id: res.restaurant.id,
             name: res.restaurant.name,
