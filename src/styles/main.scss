@@ -74,33 +74,40 @@ nav {
 // Hero
 .hero {
   z-index: -1;
-  display: flex;
-  align-items: center;
-  background-image: url('/src/public/heros/hero-image_1.jpg');
-  min-height: 380px;
   width: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-  .hero-Inner {
-    margin: 0 auto;
-    max-width: fit-content;
-    color: $titleColor;
-    text-align: center;
-    border-radius: 10px;
-    background-color: rgba(238, 231, 231, 0.438);
-
-    .hero-title {
-      font-weight: 500;
-      margin-bottom: 8px;
+  height: 280px;
+  picture{
+    img{
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
     }
+  }
+  // background-image: url('/src/public/images/hero-image_1.jpg');
+  // min-height: 380px;
+  // width: 100%;
+  // background-position: top;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // position: relative;
+}
 
-    .hero-text {
-      margin-top: 16px;
-      font-weight: 300;
-    }
+.hero-Inner {
+  margin: 0 auto;
+  max-width: fit-content;
+  color: $titleColor;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(238, 231, 231, 0.438);
+
+  .hero-title {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .hero-text {
+    margin-top: 16px;
+    font-weight: 300;
   }
 }
 
