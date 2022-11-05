@@ -5,7 +5,6 @@ import { alertMaker, loadingDelete, loadingMaker } from '../../utils/maker-eleme
 const Favorite = {
   async render() {
     return `
-      <hero-element></hero-element>
       <list-restaurant></list-restaurant>
       `;
   },

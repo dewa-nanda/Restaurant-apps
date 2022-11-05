@@ -8,6 +8,8 @@ class heroElement extends HTMLElement {
     <div class="hero">
       <picture>
         <source media="(max-width: 600px)" srcset="./images/hero-image_1-small.jpg">
+        <source media="(max-width: 600px)" srcset="./images/hero-image_1-small.jpg">
+
         <img src='./images/hero-image_1-large.jpg' 
           alt="jumbotron">
       </picture>

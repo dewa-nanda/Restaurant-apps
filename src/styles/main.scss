@@ -71,46 +71,48 @@ nav {
   }
 }
 
-// Hero
-.hero {
-  z-index: -1;
+hero-element{
   width: 100%;
   height: 280px;
-  picture{
-    img{
+  display: flex;
+// Hero
+  .hero {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    picture{
       width: 100%;
-      height: 280px;
-      object-fit: cover;
+      img{
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
     }
   }
-  // background-image: url('/src/public/images/hero-image_1.jpg');
-  // min-height: 380px;
-  // width: 100%;
-  // background-position: top;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // position: relative;
-}
 
-.hero-Inner {
-  margin: 0 auto;
-  max-width: fit-content;
-  color: $titleColor;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgba(238, 231, 231, 0.438);
+  .hero-Inner {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-height: max-content;
+    margin: 0 auto;
+    padding: 15px;
+    color: $titleColor;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(238, 231, 231, 0.438);
 
-  .hero-title {
-    font-weight: 500;
-    margin-bottom: 8px;
-  }
+    .hero-title {
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
 
-  .hero-text {
-    margin-top: 16px;
-    font-weight: 300;
+    .hero-text {
+      margin-top: 16px;
+      font-weight: 300;
+    }
   }
 }
-
 // Skip content
 .skip-link {
   position: absolute;
