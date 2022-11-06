@@ -11,12 +11,12 @@ class navbarElement extends HTMLElement {
         </div>
 
         <button class="nav__toggle" id="hamburgerButton" aria-label="Tombol Menampilkan Navigasi" type="button">☰</button>
-        
-        <ul id="navigationDrawer">
-          <li><a href="#/home">Home</a></li>
-          <li><a href="#/favorite">Favorite</a></li>
-          <li><a href="https://github.com/dewa-nanda" target="_blank">About Us</a></li>
-        </ul>
+
+          <ul id="navigationDrawer">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/favorite">Favorite</a></li>
+            <li><a href="https://github.com/dewa-nanda" target="_blank" rel="noreferrer">About Us</a></li>
+          </ul>
       </nav>`;
   }
 }

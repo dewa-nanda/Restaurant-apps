@@ -1,0 +1,42 @@
+
+
+<<< Recorded commands on Fri Nov 04 2022 01:45:30 GMT+0700 (Western Indonesia Time)
+I.seeElement(".err-favorite")
+I.see("Belum ada restourant favorit untuk saat ini",".err-favorite h1")
+
+<<< Recorded commands on Fri Nov 04 2022 01:53:46 GMT+0700 (Western Indonesia Time)
+I.seeElement(".card-item")
+I.click(locate(".card-item__title"))
+I.seeElement("#likeButtonContainer")
+
+<<< Recorded commands on Fri Nov 04 2022 01:59:42 GMT+0700 (Western Indonesia Time)
+I.seeElement('.card-item')
+I.seeElement('.card-item .card-item__content')
+I.seeElement('.card-item .card-item__content .card-item__title')
+
+<<< Recorded commands on Fri Nov 04 2022 02:32:46 GMT+0700 (Western Indonesia Time)
+I.click(locate('.card-item .card-item__content .card-item__title').first())
+I.seeElement('#likeButton')
+
+<<< Recorded commands on Fri Nov 04 2022 02:35:02 GMT+0700 (Western Indonesia Time)
+I.amOnPage('/#/favorite');
+I.seeElement("item-restaurant")
+
+<<< Recorded commands on Fri Nov 04 2022 02:45:28 GMT+0700 (Western Indonesia Time)
+I.refreshPage();
+I.refreshPage();
+I.grabTextFrom('.info__header h1')
+
+<<< Recorded commands on Fri Nov 04 2022 02:49:45 GMT+0700 (Western Indonesia Time)
+I.grabTextFrom('.card-item__title a');
+
+<<< Recorded commands on Fri Nov 04 2022 03:31:33 GMT+0700 (Western Indonesia Time)
+I.seeElement('.err-favorite')
+
+<<< Recorded commands on Fri Nov 04 2022 03:43:50 GMT+0700 (Western Indonesia Time)
+I.seeElement('#nameElement')
+I.fillField('#nameElement', 'KELARRR');
+I.fillField('#commantElement', 'ahahahahahahahaha');
+
+<<< Recorded commands on Fri Nov 04 2022 04:29:20 GMT+0700 (Western Indonesia Time)
+I.seeElement('.swal2-container')

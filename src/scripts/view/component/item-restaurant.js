@@ -12,7 +12,7 @@ class itemRestaurant extends HTMLElement {
         <article class="card-item" tabindex="0">
             <figure>
               <span class="card-cityName">${this._restaurant.city}</span>
-              <img class="card-item__thumbnail" src="${API_ENDPOINT.IMAGE('small', this._restaurant.pictureId)}" height="283" alt="${this._restaurant.name} from ${this._restaurant.city}">
+              <img class="card-item__thumbnail lazyload" src="${API_ENDPOINT.IMAGE('small', this._restaurant.pictureId)}" height="283" alt="${this._restaurant.name} from ${this._restaurant.city}">
             </figure>
 
             <div class="card-item__content">

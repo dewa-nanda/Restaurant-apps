@@ -4,16 +4,19 @@ class heroElement extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = `<div class="hero">
-      <div class="hero-Inner">
-        <div class="hero-title">
-          <h1>Kepuasan Pelanggan Adalah Koenchi Kesuksesan Kami!</h1>
-        </div>
-        <div class="hero-text">
-          <p>Tempat penyedia informasi seputar restaurant</p>
-        </div>
-      </div>
-    </div>`;
+    this.innerHTML = `
+    <div class="hero">
+      <picture>
+        <source type="image/webp" media="(max-width: 600px)" srcset="./images/hero-image_1-small.webp">
+        <source type="image/jpeg" media="(max-width: 600px)" srcset="./images/hero-image_1-small.jpg">
+
+        <img src='./images/hero-image_1-large.jpg' 
+          alt="jumbotron">
+      </picture>
+    </div>
+    
+   
+    `;
   }
 }
 
