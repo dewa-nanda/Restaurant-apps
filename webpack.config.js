@@ -67,7 +67,7 @@ module.exports = {
       ],
       overrideExtension: true,
     }),
-    new BundleAnalyzerPlugin(),
+    
   ],
   output: {
     filename: '[name].bundle.[contenthash].js',
