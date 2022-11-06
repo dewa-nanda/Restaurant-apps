@@ -10,8 +10,6 @@ import FavoritRestoIdb from '../../data/favorite-resto-idb';
 
 const Detail = {
   async render() {
-    const heroElement = document.querySelector('hero-element');
-    heroElement.remove();
     return `
       <detail-element id="detail__resto" class="detail__resto" tabindex="0"></detail-element>
       <div id="likeButtonContainer"></div>

@@ -24,6 +24,7 @@ class itemRestaurant extends HTMLElement {
       restaurantElement.restaurant = restaurant;
       contentElement.appendChild(restaurantElement);
     });
+    
     containerElement.appendChild(headerContainer);
     containerElement.appendChild(contentElement);
     this.appendChild(containerElement);

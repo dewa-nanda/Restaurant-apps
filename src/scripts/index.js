@@ -6,6 +6,11 @@ import './view/component/hero-element';
 import './view/component/list-restaurant';
 import App from './view/app';
 import swRegister from './utils/sw-register';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+ 
+const START = 10;
+const NUMBER_OF_IMAGES = 100;
 
 const app = new App({
   button: document.querySelector('#hamburgerButton'),
