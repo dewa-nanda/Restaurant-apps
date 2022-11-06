@@ -53,9 +53,9 @@ module.exports = {
         },
       ],
     }),
-    // new WorkboxWebpackPlugin.GenerateSW({
-    //   swDest: './sw.bundle.js',
-    // }),
+    new WorkboxWebpackPlugin.GenerateSW({
+      swDest: './sw.bundle.js',
+    }),
     new ImageminWebpWebpackPlugin({
       config: [
         {
