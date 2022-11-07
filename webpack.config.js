@@ -7,7 +7,6 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: {
@@ -48,7 +47,6 @@ module.exports = {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/'),
           globOptions: {
-            // CopyWebpackPlugin mengabaikan berkas yang berada di dalam folder images
             ignore: ['**/imageX/**'],
           },
         },
@@ -68,7 +66,6 @@ module.exports = {
       ],
       overrideExtension: true,
     }),
-    // new BundleAnalyzerPlugin(),
   ],
   output: {
     filename: '[name].bundle.[contenthash].js',
