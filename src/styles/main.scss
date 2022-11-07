@@ -405,15 +405,12 @@ main {
 }
 
 .footer {
-  position: fixed;
-  height: 25px;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(94, 93, 93, 0.719);
-  color: rgb(212, 209, 209);
-  text-align: center;
-  p{
-    padding-top: 3px;
+  height: 35px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 5px;
+  p {
+    padding-top: 8px;
+    flex-basis: 100%;
+    text-align: center;
   }
 }
 
