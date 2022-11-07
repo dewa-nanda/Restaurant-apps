@@ -17,7 +17,6 @@ const Detail = {
   },
 
   async afterRender() {
-    document.head
     const url = UrlParser.parseActiveUrlWithoutCombiner();
 
     const likeButtonContainer = document.querySelector('#likeButtonContainer');

@@ -1,5 +1,4 @@
 /* eslint-disable no-underscore-dangle */
-import FavoritRestoIdb from '../data/favorite-resto-idb';
 import { createLikeButtonTemplate, createUnlikedButtonTemplate } from '../view/templates/template-creator';
 
 const LikeButtonPresenter = {

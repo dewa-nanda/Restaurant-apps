@@ -13,9 +13,10 @@ const Home = {
   async afterRender() {
     const listRestaurantsElement = document.querySelector('list-restaurant');
 
-    // loadingMaker('#main-content');
+    loadingMaker('#main-content');
     await RestaurantDbSource.getListRestaurants()
       .then((res) => {
+        loadingDelete();
         listRestaurantsElement.restaurants = res.restaurants;
       })
       .catch(() => {
