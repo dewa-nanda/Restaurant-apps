@@ -8,7 +8,6 @@ class itemRestaurant extends HTMLElement {
   }
 
   render() {
-
     const containerElement = document.createElement('div');
     const headerContainer = document.createElement('div');
     const restaurantElement = document.createElement('item-restaurant');
