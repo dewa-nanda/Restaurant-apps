@@ -1,3 +1,5 @@
+/* eslint-disable prefer-destructuring */
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -67,7 +69,6 @@ module.exports = {
       ],
       overrideExtension: true,
     }),
-    
   ],
   output: {
     filename: '[name].bundle.[contenthash].js',
